@@ -1,10 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
-// TinyBasic Plus
+// TinyBasic Plus BR
 ////////////////////////////////////////////////////////////////////////////////
-//
-// Authors: Mike Field <hamster@snap.net.nz>
-//	    Scott Lawrence <yorgle@gmail.com>
-//         Brian O'Dell <megamemnon@megamemnon.com>
+// Modificacao do TinyBasic Plus para a lingua PT-BR.
+// Comandos modificados para maior facilidade com nao-falantes do ingles.
 
 #define kVersion "v0.14"
 
@@ -281,26 +279,28 @@ static unsigned char *tempsp;
 
 /***********************************************************/
 // Keyword table and constants - the last character has 0x80 added to it
+// LISTAR = LIST, CARREGAR = LOAD, EXE = RUN, SALVAR = SAVE, PRXM = NEXT, VAPR = GOTO, VASUB = GOSUB, RETORNE = RETURN,
+// PARA = FOR, ENTRADA = INPUT, SAIDA = PRINT, PARE = STOP, LSFLS = FILES.
 const static unsigned char keywords[] PROGMEM = {
-  'L','I','S','T'+0x80,
-  'L','O','A','D'+0x80,
-  'N','E','W'+0x80,
-  'R','U','N'+0x80,
-  'S','A','V','E'+0x80,
-  'N','E','X','T'+0x80,
+  'L','I','S','T','A','R'+0x80,
+  'C','A','R','R','E','G','A','R'+0x80,
+  'N','O','V','O'+0x80,
+  'E','X','E'+0x80,
+  'S','A','L','V','A','R'+0x80,
+  'P','R','X','M'+0x80,
   'L','E','T'+0x80,
-  'I','F'+0x80,
-  'G','O','T','O'+0x80,
-  'G','O','S','U','B'+0x80,
-  'R','E','T','U','R','N'+0x80,
+  'S','E'+0x80,
+  'V','A','P','R'+0x80,
+  'V','A','S','U','B'+0x80,
+  'R','E','T','O','R','N','E'+0x80,
   'R','E','M'+0x80,
-  'F','O','R'+0x80,
-  'I','N','P','U','T'+0x80,
-  'P','R','I','N','T'+0x80,
+  'P','A','R','A'+0x80,
+  'E','N','T','R','A','D','A'+0x80,
+  'S','A','I','D','A'+0x80,
   'P','O','K','E'+0x80,
-  'S','T','O','P'+0x80,
+  'P','A','R','E'+0x80,
   'B','Y','E'+0x80,
-  'F','I','L','E','S'+0x80,
+  'L','S','F','L','S'+0x80,
   'M','E','M'+0x80,
   '?'+ 0x80,
   '\''+ 0x80,
@@ -308,7 +308,7 @@ const static unsigned char keywords[] PROGMEM = {
   'D','W','R','I','T','E'+0x80,
   'D','E','L','A','Y'+0x80,
   'E','N','D'+0x80,
-  'R','S','E','E','D'+0x80,
+  'S','R','A','N','D'+0x80,
   'C','H','A','I','N'+0x80,
 #ifdef ENABLE_TONES
   'T','O','N','E','W'+0x80,
