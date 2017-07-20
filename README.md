@@ -7,13 +7,13 @@ Esta é uma versão em português brasileiro do firmware/os TinyBasic Plus, dese
 
 ## Sistema
 - SHH		- *Sai do BASIC (faz um soft-reboot no Arduino)*
-- END 		- *Termina a execução do programa, igual à "PARE"*
+- FIM 		- *Termina a execução do programa, igual à "PARE"*
 - MEM		- *Imprime as estatísticas de uso de memória*
 - NVO		- *Cria um novo programa limpando todo o código existente*
 - EXE		- *Executa o programa*
 
 ## I/O de arquivos/Cartão SD
-- LSAQV		- 	*Lista os arquivos no cartão SD*
+- ARQVS		- 	*Lista os arquivos no cartão SD*
 - CARREGAR filename.bas	- *Carrega um arquivo do cartão SD*
 - CHAIN filename.bas - *equivalente: NVO, CARREGAR filename.bas, EXE*
 - SALVAR filename.bas	- *Salva o programa sendo editado no cartão SD, sobre-escrevendo*
@@ -26,8 +26,8 @@ Esta é uma versão em português brasileiro do firmware/os TinyBasic Plus, dese
 - ECHAIN	- Carrega o programa no EEProm e executa-o
 
 ## I/O
-- PEEK( address )	- *Define um valor na memória* (unimplemented)
-- POKE			- *Retorna um valor na memória* (unimplemented)
+- PEEK( endereco )	- *Define um valor na memória* (não implementado)
+- POKE			- *Retorna um valor na memória* (não implementado)
 - SAIDA expressao	- *Imprime (escreve) "expressao" na tela. Igual à "?"*
 - REM coisas		- *Remarca/comenta. Igual à "'"*
 
@@ -71,6 +71,8 @@ Infelizmente, esta modificação do TinyBasic Plus original ainda não foi testa
 - Tiny Basic Plus - Scott Lawrence <yorgle@gmail.com> [Github Page](http://github.com/BleuLlama/TinyBasicPlus)
 
 - Jurg Wullschleger - Fix for unary operations and whitespace in expressions
+
+- João Henrique - Tradução para o português
 
 # Links
 - [Arduino Microcontroller](http://arduino.cc)

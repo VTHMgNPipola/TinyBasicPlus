@@ -300,7 +300,7 @@ const static unsigned char keywords[] PROGMEM = {
   'P','O','K','E'+0x80,
   'P','A','R','E'+0x80,
   'S','H','H'+0x80,
-  'L','S','A','Q','V'+0x80,
+  'A','R','Q','V','S'+0x80,
   'M','E','M'+0x80,
   '?'+ 0x80,
   '\''+ 0x80,
