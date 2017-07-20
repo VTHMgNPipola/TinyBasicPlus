@@ -279,16 +279,16 @@ static unsigned char *tempsp;
 
 /***********************************************************/
 // Keyword table and constants - the last character has 0x80 added to it
-// LISTAR = LIST, CARREGAR = LOAD, EXE = RUN, SALVAR = SAVE, PRXM = NEXT, VAPR = GOTO, VASUB = GOSUB, RETORNE = RETURN,
+// LISTAR = LIST, CARREGAR = LOAD, NVO = NEW, EXE = RUN, SALVAR = SAVE, PRXM = NEXT, VAPR = GOTO, VASUB = GOSUB, RETORNE = RETURN,
 // PARA = FOR, ENTRADA = INPUT, SAIDA = PRINT, PARE = STOP, LSFLS = FILES.
 const static unsigned char keywords[] PROGMEM = {
   'L','I','S','T','A','R'+0x80,
   'C','A','R','R','E','G','A','R'+0x80,
-  'N','O','V','O'+0x80,
+  'N','V','O'+0x80,
   'E','X','E'+0x80,
   'S','A','L','V','A','R'+0x80,
   'P','R','X','M'+0x80,
-  'L','E','T'+0x80,
+  'D','E','F'+0x80,
   'S','E'+0x80,
   'V','A','P','R'+0x80,
   'V','A','S','U','B'+0x80,
@@ -299,15 +299,15 @@ const static unsigned char keywords[] PROGMEM = {
   'S','A','I','D','A'+0x80,
   'P','O','K','E'+0x80,
   'P','A','R','E'+0x80,
-  'B','Y','E'+0x80,
-  'L','S','F','L','S'+0x80,
+  'S','H','H'+0x80,
+  'L','S','A','Q','V'+0x80,
   'M','E','M'+0x80,
   '?'+ 0x80,
   '\''+ 0x80,
   'A','W','R','I','T','E'+0x80,
   'D','W','R','I','T','E'+0x80,
   'D','E','L','A','Y'+0x80,
-  'E','N','D'+0x80,
+  'F','I','M'+0x80,
   'S','R','A','N','D'+0x80,
   'C','H','A','I','N'+0x80,
 #ifdef ENABLE_TONES
@@ -389,12 +389,12 @@ const static unsigned char func_tab[] PROGMEM = {
 #define FUNC_UNKNOWN 5
 
 const static unsigned char to_tab[] PROGMEM = {
-  'T','O'+0x80,
+  'P','R'+0x80,
   0
 };
 
 const static unsigned char step_tab[] PROGMEM = {
-  'S','T','E','P'+0x80,
+  'P','S','S','O'+0x80,
   0
 };
 

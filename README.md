@@ -6,16 +6,16 @@ Esta é uma versão em português brasileiro do firmware/os TinyBasic Plus, dese
 # Lista completa de comandos suportados
 
 ## Sistema
-- BYE		- *Sai do BASIC (faz um soft-reboot no Arduino)*
+- SHH		- *Sai do BASIC (faz um soft-reboot no Arduino)*
 - END 		- *Termina a execução do programa, igual à "PARE"*
 - MEM		- *Imprime as estatísticas de uso de memória*
-- NOVO		- *Cria um novo programa limpando todo o código existente*
+- NVO		- *Cria um novo programa limpando todo o código existente*
 - EXE		- *Executa o programa*
 
 ## I/O de arquivos/Cartão SD
-- LSFLS		- 	*Lista os arquivos no cartão SD*
+- LSAQV		- 	*Lista os arquivos no cartão SD*
 - CARREGAR filename.bas	- *Carrega um arquivo do cartão SD*
-- CHAIN filename.bas - *equivalente: NOVO, CARREGAR filename.bas, EXE*
+- CHAIN filename.bas - *equivalente: NVO, CARREGAR filename.bas, EXE*
 - SALVAR filename.bas	- *Salva o programa sendo editado no cartão SD, sobre-escrevendo*
 
 ## EEProm
@@ -32,7 +32,7 @@ Esta é uma versão em português brasileiro do firmware/os TinyBasic Plus, dese
 - REM coisas		- *Remarca/comenta. Igual à "'"*
 
 ## Expressões e Matemática
-- A=V, LET A=V	- *Define um valor a uma variável*
+- A=V, DEF A=V	- *Define um valor a uma variável*
 - +, -, \*, / - *Matemática geral*
 - <,<=,=,<>,!=,>=,> - *Comparações*
 - ABS( expression )  - *Retorna o valor absoluto da expressão*
@@ -41,12 +41,12 @@ Esta é uma versão em português brasileiro do firmware/os TinyBasic Plus, dese
 
 ## Controle
 - SE expressao comando - *Executa o comando se "expressao" for verdade*
-- PARA variavel = comeco TO fim	- *Começa o bloco "para"*
-- PARA variavel = comeco TO fim STEP valor - *Começa o bloco "para" com um certo número de passos*
+- PARA variavel = comeco PR fim	- *Começa o bloco "para"*
+- PARA variavel = comeco PR fim PSSO valor - *Começa o bloco "para" com um certo número de passos*
 - PRXM - *Fim do bloco "para"*
 - VAPR linha - *Continua a execução de "linha"*
 - VASUB linha - *Chama a subrotina em "linha"*
-- RETURNE	- *Retorna de uma subrotina*
+- RETORNE	- *Retorna de uma subrotina*
 
 ## I/O de pinos
 - DELAY	timems*- Espera (em milisegundos)*
