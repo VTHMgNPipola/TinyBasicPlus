@@ -419,10 +419,10 @@ const static unsigned char relop_tab[] PROGMEM = {
 #define RELOP_UNKNOWN	7
 
 const static unsigned char highlow_tab[] PROGMEM = { 
-  'H','I','G','H'+0x80,
-  'H','I'+0x80,
-  'L','O','W'+0x80,
-  'L','O'+0x80,
+  'A','L','T','O'+0x80,
+  'A','L'+0x80,
+  'B','X','O'+0x80,
+  'B','X'+0x80,
   0
 };
 #define HIGHLOW_HIGH    1
