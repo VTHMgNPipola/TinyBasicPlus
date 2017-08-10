@@ -1,4 +1,4 @@
-TinyBasic Plus BR Edition
+TinyBasic++
 ==============
 
 Esta é uma versão em português brasileiro do firmware/os TinyBasic Plus, desenvolvido em C.
