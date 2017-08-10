@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-// TinyBasic Plus BR
+// TinyBasic PlusPlus
 ////////////////////////////////////////////////////////////////////////////////
 // Modificacao do TinyBasic Plus para a lingua PT-BR.
 // Comandos modificados para maior facilidade com nao-falantes do ingles.
@@ -447,7 +447,7 @@ static const unsigned char okmsg[]            PROGMEM = "Pronto";
 static const unsigned char whatmsg[]          PROGMEM = "O que? ";
 static const unsigned char howmsg[]           PROGMEM =	"Como?";
 static const unsigned char sorrymsg[]         PROGMEM = "Desculpe!";
-static const unsigned char initmsg[]          PROGMEM = "TinyBasic Plus BR Edition " kVersion;
+static const unsigned char initmsg[]          PROGMEM = "TinyBasic++ " kVersion;
 static const unsigned char memorymsg[]        PROGMEM = " bytes livres.";
 #ifdef ARDUINO
 #ifdef ENABLE_EEPROM
